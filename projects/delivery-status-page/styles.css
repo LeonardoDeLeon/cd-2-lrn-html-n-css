@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    background: url("https://assets.codepen.io/6060109/ZigZag.png");
+
+}
+
+.panel {
+    width: 90%;
+    min-width: 327px;
+    height: 567px;
+    background: #ffffff;
+    margin: 70px auto;
+    border-radius: 5px;
+    background-blend-mode: normal;
+    box-shadow: 0px 40px 40px -20px #3c7b61;
+    position: relative;
+}
+
+#x-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
