@@ -64,4 +64,40 @@ body, html {
     margin-top: 10px;
 }
 
+.menu-section {
+    width: 80%;
+    height: 15%;
+    margin: 0 auto;
+    transform: translateY(140%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background: #f0fff5;
+    background-blend-mode: normal;
+}
 
+.menu-section img {
+    height: 11.8vh;
+}
+
+.menu-section div {
+    font-size: 12px;
+    font-weight: 800;
+    color: #2f463d;
+    line-height: 17px;
+    padding: 15px;
+}
+
+.menu-section div p {
+    font-weight: 500;
+    color: #7a8f85;
+}
+
+.menu-section a {
+    color: #467a66;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.85px;
+    padding: 15px;
+}
