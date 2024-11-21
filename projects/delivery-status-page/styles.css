@@ -44,7 +44,7 @@ body, html {
 .confirmation-section {
     margin: auto;
     width: 80%;
-    transform: translateY(80%);
+    transform: translateY(70%);
     text-align: center;
 }
 
@@ -66,9 +66,9 @@ body, html {
 
 .menu-section {
     width: 80%;
-    height: 15%;
+    height: 13%;
     margin: 0 auto;
-    transform: translateY(140%);
+    transform: translateY(160%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,7 @@ body, html {
 }
 
 .menu-section img {
-    height: 11.8vh;
+    height: 10vh;
 }
 
 .menu-section div {
