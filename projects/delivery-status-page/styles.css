@@ -15,7 +15,7 @@ body, html {
 .panel {
     width: 90%;
     min-width: 327px;
-    height: 567px;
+    height: 580px;
     background: #ffffff;
     margin: 70px auto;
     border-radius: 5px;
@@ -115,4 +115,26 @@ button {
     font-size: 14px;
     font-weight: 800;
     border: none;
+}
+
+.dot-section {
+    width: 60px;
+    height: 5%;
+    margin: auto;
+    transform: translateY(110%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: #e0e0e0;
+    background-blend-mode: normal;
+    border-radius: 50%;
+}
+
+.dot:nth-child(2) {
+    background-color: #67bd99;
 }
