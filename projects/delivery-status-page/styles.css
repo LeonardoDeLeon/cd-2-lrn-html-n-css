@@ -12,9 +12,21 @@ body, html {
     font-family: Montserrat;
 }
 
+#outer-wrapper {
+    display: flex;
+}
+
+.panel:nth-child(1) {
+    display: none;
+}
+
+.panel:nth-child(3) {
+    display: none;
+}
+
 .panel {
-    width: 90%;
-    min-width: 327px;
+    width: 30%;
+    min-width: 350px;
     height: 580px;
     background: #ffffff;
     margin: 70px auto;
@@ -30,32 +42,31 @@ body, html {
     right: 15px;
 }
 
-.happy-face-section{
+.big-image-section{
     width: 109px;
     height: 109px;
     margin: auto;
     transform: translateY(50%);
 }
 
-.happy-face-section > img {
+.big-image-section > img {
     width: 100%;
 }
 
-.confirmation-section {
+.status-section {
     margin: auto;
-    width: 80%;
     transform: translateY(70%);
     text-align: center;
 }
 
-.confirmation-section h2 {
+.status-section h2 {
     font-weight: 600;
     font-size: 22px;
     color: #2F463D;
     line-height: 27px;
 }
 
-.confirmation-section p {
+.status-section p {
     font-family: Ubuntu;
     font-size: 14px;
     font-weight: 400;
@@ -65,7 +76,6 @@ body, html {
 }
 
 .menu-section {
-    width: 80%;
     height: 13%;
     margin: 0 auto;
     transform: translateY(160%);
@@ -102,8 +112,13 @@ body, html {
     padding: 15px;
 }
 
+.btn-bg-color-grey {
+    background: #bdbdbd;
+    background-blend-mode: normal;
+    box-shadow: 0px 20px 20px rgba(167,167,167,0.2);
+}
+
 button {
-    width: 80%;
     height: 9%;
     margin-top: 150px;
     transform: translateX(12%);
@@ -115,6 +130,10 @@ button {
     font-size: 14px;
     font-weight: 800;
     border: none;
+}
+
+.btn-sct-width {
+    width: 80%;
 }
 
 .dot-section {
@@ -137,4 +156,84 @@ button {
 
 .dot:nth-child(2) {
     background-color: #67bd99;
+}
+
+@media only screen and (min-width: 992px) {
+    .panel {
+        min-width: 425px;
+        height:720px;
+    }
+
+    .panel:nth-child(1) {
+        display: block;
+    }
+
+    .panel:nth-child(3) {
+        display: block;
+    }    
+
+    .big-image-section{
+        width: 150px;
+        height: 150px;
+        transform: translateY(40%);
+    }
+
+    .status-section {
+        transform: translateY(50%);
+    }
+
+    .status-section h2 {
+        font-size: 28px;
+        line-height: 34px;
+        height: 70px;
+    }
+
+    .status-section p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .menu-section {
+        transform: translateY(140%);
+    }
+
+    .no-menu {
+        background: #fff;
+        height: 7%;
+        transform: translateY(160%);
+    }
+
+    .menu-section div {
+        padding: 5px;
+    }
+
+    button {
+        margin-top: 160px;
+        transform: translateX(17%);
+    }
+
+    .panel:nth-child(1) .dot-section .dot:nth-child(1) {
+        background-color: #67bd99;
+    }
+
+    .panel:nth-child(1) .dot-section .dot:nth-child(2) {
+        background: #e0e0e0;
+    }
+
+    .panel:nth-child(3) .dot-section .dot:nth-child(3) {
+        background-color: #67bd99;
+    }
+
+    .panel:nth-child(3) .dot-section .dot:nth-child(2) {
+        background: #e0e0e0;
+    }
+
+    .dot-spacer {
+        transform: translateY(220%);
+    }
+
+    .btn-sct-width {
+        width: 75%;
+    }
+
 }
