@@ -159,17 +159,30 @@ button {
 }
 
 @media only screen and (min-width: 992px) {
+    #outer-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
     .panel {
         min-width: 425px;
+        max-width: 426px;
         height:720px;
     }
 
     .panel:nth-child(1) {
-        display: block;
+        display: inline-block;
+        height: 680px;
+        margin-right: -20px;
+    }
+
+    .panel:nth-child(2) {
+        z-index: 1;
     }
 
     .panel:nth-child(3) {
-        display: block;
+        display: inline-block;
+        height: 680px;
+        margin-left: -20px;
     }    
 
     .big-image-section{
@@ -199,8 +212,8 @@ button {
 
     .no-menu {
         background: #fff;
-        height: 7%;
-        transform: translateY(160%);
+        height: 11%;
+        transform: translateY(140%);
     }
 
     .menu-section div {
@@ -209,7 +222,7 @@ button {
 
     button {
         margin-top: 160px;
-        transform: translateX(17%);
+        transform: translateX(22%);
     }
 
     .panel:nth-child(1) .dot-section .dot:nth-child(1) {
@@ -233,7 +246,15 @@ button {
     }
 
     .btn-sct-width {
-        width: 75%;
+        width: 70%;
     }
 
+    .btn-top-margin {
+        margin-top: 73px;
+    }
+
+    .adj-width {
+        width: 95%;
+        transform: translateX(3%);
+    }
 }
